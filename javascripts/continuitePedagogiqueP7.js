@@ -59,6 +59,11 @@ $(function() {
                 newContent += '<video controls width="467" height="351"><source src="videos/SigneDeriveeVariationFct.mp4"></video>'
                 newContent += "<p>Nous pouvons poursuivre avec l'exercice complet (et donc très important) montrant comment sont souvent utilisées ces propriétés.</p>"
                 newContent += "<p>Voici le corrigé de l'exercice du cours. Le recopier : <a href=\"pdf/2019_exBilanEtudeFct.pdf\" target=\"_blank\">pdf</a>.</p>"
+                newContent += "<p>Pour expliquer ce documents, voici une vidéo que j'ai découpée en 4 parties. <strong>N'oubliez-pas que cet exercice est très important.</strong>"
+                newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion1.mp4"></video>'
+                newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion2.mp4"></video>'
+                newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion3.mp4"></video>'
+                newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion3cd.mp4"></video>'
                 break
             default:
                 //accueil
