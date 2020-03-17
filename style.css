@@ -4,7 +4,6 @@
     src: url('fonts/journal-webfont.eot');
     src: url('fonts/journal-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/journal-webfont.woff') format('woff'), url('fonts/journal-webfont.ttf') format('truetype'), url('fonts/journal-webfont.svg#LearningCurveProRegular') format('svg');
 }
-
 html,
 body {
     font-family: "Comic Sans MS", "Trebuchet MS", Arial, Verdana, sans-serif;
@@ -13,9 +12,8 @@ body {
     background: url("images/bg1.gif");
     /*Image téléchargée sur http://www.fontsquirrel.com/*/
     /*height:99%;*/
-    width: 100%;
     margin: 0px;
-    padding: 0px;
+    padding: 5px;
 }
 
 nav ul {
