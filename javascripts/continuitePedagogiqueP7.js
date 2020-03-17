@@ -53,7 +53,7 @@ $(function() {
                 break
             case 'III - Sens de variation d\'une fonction et signe du nombre dérivé':
                 newContent = '<h2>III - Sens de variation d\'une fonction et signe du nombre dérivé </h2>'
-                newContent += '<p>Recopier dans votre cours ce qui suit :<br/><img src="images/proprieteSigneDerivee.jpg"><br/>'
+                newContent += '<p>Recopier dans votre cours ce qui suit :<br/><img src="images/proprieteSigneDerivee.JPG"><br/>'
                 newContent += '<p>Voici sur un exemple (à écrire dans le cours) comment on peut utiliser cette propriété : <a href="pdf/2019_signeDeriveeVariationFct.pdf" target="_blank">pdf</a></p>'
                 newContent += '<p>Pour plus d\'explications, voici une vidéo qui reprend étape par étape le contenu de ce fichier pdf.</p>'
                 newContent += '<video controls width="467" height="351"><source src="videos/SigneDeriveeVariationFct.mp4"></video>'
