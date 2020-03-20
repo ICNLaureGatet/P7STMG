@@ -68,9 +68,9 @@ $(function() {
                 newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion2.mp4"></video>'
                 newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion3.mp4"></video>'
                 newContent += '<video controls width="532" height="408"><source src="videos/exoCoursQuestion3cd.mp4"></video>'
-                newContent += 'Exercice 42 p. 113 (à faire le vendredi 20 mars).'
-                newContent += 'Exercice 54 p. 114 (à faire pour le mardi 24 mars).'
-                newContent += 'Exercice 71 p. 116 (à faire le mars 24 mars).'
+                newContent += '<p><ul><li>Exercice 42 p. 113 (à faire le vendredi 20 mars).</li>'
+                newContent += '<li>Exercice 54 p. 114 (à faire pour le mardi 24 mars).</li>'
+                newContent += '<li>Exercice 71 p. 116 (à faire le mars 24 mars).</li></ul></p>'
                 break
             default:
                 //accueil
