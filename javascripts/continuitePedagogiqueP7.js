@@ -71,7 +71,7 @@ $(function() {
                 newContent += '<p><ul><li>Exercice 42 p. 113 (à faire le vendredi 20 mars). Voici le <a href="pdf/ex42p113.pdf" target="_blank">corrigé (sous forme d\'un diaporama) de l\'exercice 42</a></li>'
                 newContent += '<li>Exercice 54 p. 114 (à faire pour le mardi 24 mars). Voici le <a href="pdf/ex54p114.pdf" target="_blank">corrigé (sous forme d\'un diaporama) de l\'exercice 54</a></li>'
                 newContent += '<li>Exercice 71 p. 116 (à faire le mars 24 mars).  Voici le <a href="pdf/ex71p116.pdf" target="_blank">corrigé (sous forme d\'un diaporama) de l\'exercice 71</a></li>'
-                newContent += '<li>Exercice 73 p. 116. Cet exercice est à me rendre <b>pour le vendredi 27 mars</b> (sur traitement de texte - LibreOffice - ou sur feuille en m\'envoyant une photo.</li></ul></p>'
+                newContent += '<li>Exercice 73 p. 116. Cet exercice est à me rendre <b>pour le vendredi 27 mars</b> (sur traitement de texte - LibreOffice - ou sur feuille en m\'envoyant une photo.</li>'
                 //newContent += '<li>Voici le <a href="pdf/ex73p116.pdf" target="_blank">corrigé de l\'exercice 73 p. 116</a>.</li>'
                 newContent += '<li>Dernier exercice du chapitre sous forme d\'un devoir à rendre : exercice 97 p. 121 + <a href="pdf/Courbe DM01.pdf" target="_blank">exercice sur les nombres dérivés</a> pour <b>lundi 30 mars (envoi pas mail ou moodle)</b></li></ul></p>'
                 break
