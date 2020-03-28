@@ -5,58 +5,122 @@
     <!-- En-tête de la page -->
     <meta charset="utf-8" />
     <!-- C'est l'encodage de mon site -->
-    <meta name='description' content="Continuité pédagogique" />
-    <link rel="stylesheet" href="style.css" />
+    <meta name='keywords' content="P7STMG, mathématiques, maths" />
+    <link rel="stylesheet" href="stylesheets/style.css" />
     <!--import des styles en .css-->
     <title>P7STMG</title>
     <!--C'est le titre de la page (écrit en haut de l'onglet du navigateur) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="javascript/continuitePedagogique.js"></script>
 </head>
 
+<header>
+    <span id="voirCompteur">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+    <p id="counter"></p>
+    <h2>Continuité pédagogique en P7STMG</h2>
+</header>
+
 <body>
-    <header>
-        <span id="voirCompteur">&nbsp;&nbsp;&nbsp;&nbsp;</span>
-        <p id="counter"></p>
-        <h1>Continuité pédagogique</h1>
-        <p class="h2header">P7STMG</p>
+    <p>Ce site reprend ce qui est présent sur l'ENT <a href="http://lyceeconnecte.fr" target="_blank">lyceeconnecte</a></p>
+    <p>Il permet d'accéder facilement au cours, l'accessibilité à l'ENT risquant d'être mise à dure épreuve suite au nombre très important de connexions.</p>
+    <p>Mettez l'adresse de ce site dans vos favoris, pour y accéder directement.</p>
+    <!--J'ai trouvé le bandeau de navigation ici :
+      https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-deroulant/
+       -->
+    <div id="travailRendre">
         <p> Travaux à rendre :
             <ul>
-                <li>Sur une copie (photographiée, scannée, rédigée sur un traitement de texte, ... peu importe le style) à renvoyer par mail ou sur moodle pour <b>mardi 01 avril</b>:
-                    <ol>
-                        <li>L'exercice de ce <a href="pdf/Courbe DM01.pdf" target="_blank">document</a></li>
-                        <li>Exercice 97 p. 121</li>
-                    </ol>
+                <li>Dernier exercice du chapitre sous forme d'un devoir à rendre : exercice 97 p. 121 + <a href="documents/Courbe DM01.pdf" target="_blank">exercice sur les nombres dérivés</a> pour <b>mardi 31 mars (envoi par mail ou moodle)</b>.</li>
             </ul>
         </p>
-    </header>
-    <div id="bandeau">
-        <nav>
-            <ul id="bandeauUl">
-                <li><a class='lienPage' href="#" />Accueil</a>
-                </li>
-                <li>Chapitre V - Dérivation</li>
-                <li><a class='lienPage' href="#" />II - Fonction dérivée</a>
-                </li>
-                <li><a class='lienPage' href="#" />III - Sens de variation d'une fonction et signe du nombre dérivé</a>
-                </li>
-            </ul>
-        </nav>
-
     </div>
-    <div id="blocPage">
-        <p>Ce site reprend ce qui est présent sur l'ENT <a href="http://lyceeconnecte.fr" target="_blank">lyceeconnecte</a></p>
-        <p>Il permet d'accéder facilement au cours, l'accessibilité à l'ENT risquant d'être mise à dure épreuve suite au nombre très important de connexions.</p>
-        <p>Mettez l'adresse de ce site dans vos favoris, pour y accéder directement.</p>
-        <ul class="liste_module">
-            <li> Bien sûr, certains exercices ne pourront être faits que sur l'ENT ;</li>
-            <li> L'accès à labomep se fera également avant tout depuis cet ENT.</li>
+    <nav>
+        <ul>
+            <li class="deroulant"><a href="#" id="navderivation">Chap V - Dérivation &ensp;</a>
+                <ul class="sous">
+                    <li id="navfctDerivee"><a href="#">II - Fonction dérivée</a></li>
+                    <li id="navsensVar"><a href="#">III - Sens de variation et signe de la dérivée</a></li>
+                </ul>
+            </li>
+            <li class="deroulant"><a href="#" id="navvarAlea">Chap VI - Variables aléatoires &ensp;</a>
+                <ul class="sous">
+                    <li id="navepreuvesIndep"><a href="#">I - Succession d'épreuves indépendantes</a></li>
+                    <li id="navvaDiscrete"><a href="#">II - Variables aléatoires discrètes</a></li>
+                    <li id="navBernoulli"><a href="#">III - Loi de Bernoulli</a></li>
+                </ul>
+            </li>
         </ul>
+    </nav>
 
+    <div id='derivation'>
+        <h1 id="Introduction">Chapitre V - Dérivation</h1>
 
+        <div id="fctDerivee">
+            <p>Je rappelle que vous avez été destinataire du support de cours suivant : <a href="documents/2019_1STMG_05_Derivation_eleve.pdf" target="_blank">pdf</a></p>
+            <p>Par ailleurs, les lectures graphiques de nombres dérivés sont importantes. Voici les liens directs vers les exercices présents sur labomep :
+                <ul>
+                    <li><a href="https://bibliotheque.sesamath.net/public/voir/5ba8a2980c7c1c7a4ca3eb2f" target="_blank">exercice 1</a></li>
+                    <li><a href="https://bibliotheque.sesamath.net/public/voir/5c59a21f830f3437fdd11181" target="_blank">exercice 2</a></li>
+                </ul>
+            </p>
+            <h2>II - Fonction dérivée</h2>
+            <p>Voici le tableau complété en classe</p>
+            <p> <img src="images/tableauDerivees.JPG"></p>
+            <p>Voici sur un exemple la façon de calculer la dérivée d'une fonction polynôme de degré 3 : <a href="documents/2019_presentationcalculDerivee.pdf" target="_blank">pdf</a></p>
+            <p>Pour plus d'explications, voici une vidéo qui reprend étape par étape le contenu de ce fichier pdf.</p>
+            <video controls width="467" height="348"><source src="videos/DeriveePolynomeDegre3.mp4"></video>
+            <p><strong>Cela devrait aider les élèves qui n'auraient pas réussi à faire le deuxième exercice labomep.</strong></p>
+            <p>Voici le lien vers cet exercice : <a href="https://bibliotheque.sesamath.net/public/voir/49609" target="_blank">exercice 3</a></p>
+            <p><strong>Vous devez par ailleurs aller sur moodle car un exercice en ligne est à faire (il reprend les exercices 30, 33 et 37 p. 113).</strong></p>
+        </div>
+        <div id="sensVar">
+            <h2>III - Sens de variation d'une fonction et signe du nombre dérivé </h2>
+            <p>Recopier dans votre cours ce qui suit :<br/><img src="images/proprieteSigneDerivee.JPG"></p>
+            <p>Voici sur un exemple (à écrire dans le cours) comment on peut utiliser cette propriété : <a href="documents/2019_signeDeriveeVariationFct.pdf" target="_blank">pdf</a></p>
+            <p>Pour plus d'explications, voici une vidéo qui reprend étape par étape le contenu de ce fichier pdf.</p>
+            <video controls width="467" height="351"><source src="videos/SigneDeriveeVariationFct.mp4"></video>
+            <p>Nous pouvons poursuivre avec l'exercice complet (et donc très important) montrant comment sont souvent utilisées ces propriétés.</p>
+            <p>Voici le corrigé de l'exercice du cours. Le recopier : <a href="documents/2019_exBilanEtudeFct.pdf" target="_blank">pdf</a>.</p>
+            <p>Pour expliquer ce documents, voici une vidéo que j'ai découpée en 4 parties. <strong>N'oubliez-pas que cet exercice est très important.</strong></p>
+            <video controls width="532" height="408"><source src="videos/exoCoursQuestion1.mp4"></video>
+            <video controls width="532" height="408"><source src="videos/exoCoursQuestion2.mp4"></video>
+            <video controls width="532" height="408"><source src="videos/exoCoursQuestion3.mp4"></video>
+            <video controls width="532" height="408"><source src="videos/exoCoursQuestion3cd.mp4"></video>
+            <p>
+                <ul>
+                    <li>Exercice 42 p. 113 (à faire le vendredi 20 mars). Voici le <a href="documents/ex42p113.pdf" target="_blank">corrigé (sous forme d'un diaporama) de l'exercice 42</a></li>
+                    <li>Exercice 54 p. 114 (à faire pour le mardi 24 mars). Voici le <a href="documents/ex54p114.pdf" target="_blank">corrigé (sous forme d'un diaporama) de l'exercice 54</a></li>
+                    <li>Exercice 71 p. 116 (à faire le mars 24 mars). Voici le <a href="documents/ex71p116.pdf" target="_blank">corrigé (sous forme d'un diaporama) de l'exercice 71</a></li>
+                    <li>Exercice 73 p. 117. Voici le <a href="documents/ex73p117.pdf" target="_blank">corrigé de l'exercice 73 p. 117</a>.</li>
+                    <li>Dernier exercice du chapitre sous forme d'un devoir à rendre : exercice 97 p. 121 + <a href="documents/Courbe DM01.pdf" target="_blank">exercice sur les nombres dérivés</a> pour <b>mardi 31 mars (envoi par mail ou moodle)</b></li>
+                </ul>
+            </p>
+        </div>
     </div>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <!--<script src="js/jquery-2.2.3.min.js"></script>  <!--version locale en développement-->
-    <script src='javascripts/continuitePedagogiqueP7.js'></script>
+    <div id='varAlea'>
+        <h1 id="Introduction">Chapitre VI - Variables aléatoires</h1>
+        <p>Voici le <a href="documents/2019_1STMG_06_varAleatoire_eleve.pdf" target="_blank">fichier contenant le cours</a> (il contient toutes les captures d'écran). Vous trouverez ci-dessous les exemples à intégrer.</p>
+        <div id="epreuvesIndep">
+            <!--<p>Début du chapitre (capture présente dans <a href="documents/2019_1STMG_06_varAleatoire_eleve.pdf" target="_blank">le fichier</a>)&nbsp;:<br/>
+                <img src="images/successionEpreuves.jpg" alt="succession épreuves" /></p>
+            <p>Voici deux exemples de construction d'un arbre, au format pdf et en vidéo : <a href="documents/2019_successionEpreuveEx1.pdf" target="_blanck">exemple 1</a> et <a href="documents/2019_successionEpreuveEx2.pdf" target="_blanck">exemple 2</a></p>
+            -->
+        </div>
+        <div id="vaDiscrete">
+            <!--<p>Suite du chapitre (capture présente dans <a href="documents/2019_1STMG_06_varAleatoire_eleve.pdf" target="_blank">le fichier</a>)&nbsp;:<br/>
+                <img src="images/va_loiProba.jpg" alt="variable aléatoire et loi de probabilité" /></p>
+            <p>Voici deux exemples de construction d'une loi de probabilité, au format pdf et en vidéo : <a href="documents/2019_loiProbaEx1.pdf" target="_blanck">exemple 1</a> et <a href="documents/2019_loiProbaEx2.pdf" target="_blanck">exemple 2</a></p>
+            -->
+        </div>
+        <div id="Bernoulli">
+
+        </div>
+    </div>
+    <footer id="licencePied">
+        <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/2.0/fr/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/fr/">Licence Creative Commons Attribution -  Partage dans les Mêmes Conditions 2.0 France</a>.
+    </footer>
 
 </body>
+
 
 </html>
