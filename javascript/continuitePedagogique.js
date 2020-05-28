@@ -2,7 +2,7 @@ let listeChap = ["derivation", "varAlea", "polynomes"];
 let listeSousPartie = [
     ["fctDerivee", "sensVar"],
     ["epreuvesIndep", "vaDiscrete", "Bernoulli"],
-    ["polDegre2", "polDegre3"]
+    ["polDegre2", "polDegre3", "synthese"]
 ]
 let contenuDiv = {}; //j'en fais un objet plutôt qu'une liste
 
